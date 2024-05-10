@@ -301,6 +301,7 @@ main {
 .main_txt a {
   font-size: 20px;
   font-weight: 600;
+  cursor: default;
 }
 
 .sub_txtbox {
@@ -321,19 +322,23 @@ main {
 
   /* position */
   position: fixed;
-  top: 30%;
-  right: 10%;
+  top: 312px;
+  right: -1300px;
   /* z-index: 999; */
   /* style */
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.85);
 
 
-  transform: translatex(200%);
+  /* transform: translatex(200%); */
+  opacity: 0;
+
 }
 
 .main_txt.active .credit_list_box {
-  transform: translatex(0);
+  /* transform: translatex(0); */
+  opacity: 1;
+
 
 }
 
@@ -374,6 +379,7 @@ main {
 .credit_close {
   display: flex;
   align-items: center;
+  cursor: default;
 }
 
 .txt_box {
