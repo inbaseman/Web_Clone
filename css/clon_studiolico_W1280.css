@@ -80,7 +80,7 @@ footer.active .logo_webtoon {
   height: 30px;
 
 
-  background: url(Web_Clone/images/studiolico/sp_logo.png) -151.444px 4.223px / 1098.837% 1292.308% no-repeat;
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -151.444px 4.223px / 1098.837% 1292.308% no-repeat;
 }
 
 footer.active .logo_naver {
@@ -88,7 +88,7 @@ footer.active .logo_naver {
   display: block;
   width: 67px;
   height: 31px;
-  background: url(Web_Clone/images/studiolico/sp_logo.png) -236.554px 9.133px / 1098.837% 1292.308% no-repeat;
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -236.554px 9.133px / 1098.837% 1292.308% no-repeat;
 }
 /* 햄버거메뉴 */
 
@@ -96,8 +96,8 @@ footer.active .logo_naver {
 .nav_logo {
   width: 63px;
   height: 32px;
-  /* background: url(Web_Clone/images/studiolico/sp_logo.png) -353.5px -315px / 750% 800% no-repeat; */
-  background: url(Web_Clone/images/studiolico/sp_logo.png) -222.705px -202.365px / 750% 800% no-repeat;
+  /* background: url(/Web_Clone/images/studiolico/sp_logo.png) -353.5px -315px / 750% 800% no-repeat; */
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -222.705px -202.365px / 750% 800% no-repeat;
   position: absolute;
   top: 25px;
   left: 30px;

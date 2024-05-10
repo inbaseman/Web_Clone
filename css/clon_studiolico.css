@@ -6,15 +6,15 @@
 
 @font-face {
   font-family: 'museo_slab_900';
-  src: url(Web_Clone/css/font/museo-slab/Museo_Slab_900.otf);
+  src: url(/Web_Clone/css/font/museo-slab/Museo_Slab_900.otf);
 }
 @font-face {
   font-family: 'museo_slab_700';
-  src: url(Web_Clone/css/font/museo-slab/Museo_Slab_700.otf);
+  src: url(/Web_Clone/css/font/museo-slab/Museo_Slab_700.otf);
 }
 @font-face {
   font-family: 'museo_slab_500';
-  src: url(Web_Clone/css/font/museo-slab/Museo_Slab_500.otf);
+  src: url(/Web_Clone/css/font/museo-slab/Museo_Slab_500.otf);
 }
 
 
@@ -205,7 +205,7 @@ nav a {
 .nav_logo {
   width: 100px;
   height: 50px;
-  background: url(Web_Clone/images/studiolico/sp_logo.png) -353.5px -315px / 750% 800% no-repeat;
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -353.5px -315px / 750% 800% no-repeat;
 }
 .nav_manu_list {
   /* layout */
@@ -437,13 +437,13 @@ footer {
   display: block;
   width: 43px;
   height: 40px;
-  background: url(Web_Clone/images/studiolico/sp_logo.png) -403.41px -29.118px / 1744.187% 990.712% no-repeat;
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -403.41px -29.118px / 1744.187% 990.712% no-repeat;
 }
 .logo_naver {
   display: block;
   width: 64px;
   height: 12px;
-  background: url(Web_Clone/images/studiolico/sp_logo.png) -244.373px 0.517px / 1171.875% 3333.333% no-repeat;
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -244.373px 0.517px / 1171.875% 3333.333% no-repeat;
 }
 .privacy_policy {
   display: flex;
