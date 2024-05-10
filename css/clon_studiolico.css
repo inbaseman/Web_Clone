@@ -329,7 +329,14 @@ main {
   background: rgba(255, 255, 255, 0.85);
 
 
+  transform: translatex(200%);
 }
+
+.main_txt.active .credit_list_box {
+  transform: translatex(0);
+
+}
+
 .credit_inner {
   display: flex;
   width: 360px;

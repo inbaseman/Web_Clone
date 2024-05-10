@@ -1,6 +1,8 @@
 // 퍼블용 딸깍이
 const GNB = document.querySelector('nav');
 const FOOTER = document.querySelector('footer');
+const CREDITS = document.querySelector('.main_txt');
+
 
 let menuButton = document.querySelector('.icoMenu');
 menuButton.addEventListener('click', function () {
@@ -10,6 +12,17 @@ menuButton.addEventListener('click', function () {
   this.textContent = this.textContent === 'close' ? 'menu' : 'close';
   // 삼항연산자 사용하여 텍스트 변경, 아이콘의 모습이 바뀐다 
 });
+
+let creditButton = document.querySelector('.credit_a_btn');
+creditButton.addEventListener('click', function () {
+  CREDITS.classList.toggle("active");
+});
+
+let closeButton = document.querySelector('.credit_close');
+closeButton.addEventListener('click', function () {
+  CREDITS.classList.toggle("active");
+});
+
 
 
 // 반응형 모바일에서 대메뉴 a를 클릭시, 링크기능 막고 하위메뉴 펼치기
