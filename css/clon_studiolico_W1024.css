@@ -1,0 +1,42 @@
+@charset "utf-8";
+.inner {
+  padding: 5px 30px;
+}
+
+/* main {
+  align-self: center;
+} */
+.main_txt {
+  left: 60px;
+}
+
+.main_txt h1 {
+  margin-bottom: 20px
+}
+
+
+
+
+.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_PC_01 {
+  position: absolute;
+  opacity: 0;
+}
+
+.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_MO_01 {
+  object-fit: cover;
+  transform: translate(0px, -100px) scale(1.2);
+}
+
+
+/* 스와이프 네비게이션 위치 변경 */
+.swiper-button-next, .swiper-button-prev {
+  top: var(--swiper-navigation-top-offset, 68%);
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 3%);
+  /* right: auto */
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 3%);
+  /* left: auto */
+}
