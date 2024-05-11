@@ -13,7 +13,7 @@ menuButton.addEventListener('click', function () {
   // 삼항연산자 사용하여 텍스트 변경, 아이콘의 모습이 바뀐다 
 });
 
-let creditButton = document.querySelector('.credit_a_btn');
+let creditButton = document.querySelector('.credit_btn');
 creditButton.addEventListener('click', function () {
   CREDITS.classList.toggle("active");
 });
