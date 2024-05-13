@@ -323,7 +323,7 @@ main {
   /* position */
   position: absolute;
   top: 163px;
-  left: 630px;
+  left: 710px;
   /* z-index: 999; */
   /* style */
   border-radius: 10px;
@@ -335,7 +335,7 @@ main {
 
 }
 
-.main_txt.active .credit_list_box {
+.credit_list_box.active {
   /* transform: translatex(0); */
   opacity: 1;
 
@@ -376,6 +376,7 @@ main {
   display: flex;
   gap: 20px;
 }
+
 .credit_close {
   display: flex;
   align-items: center;
