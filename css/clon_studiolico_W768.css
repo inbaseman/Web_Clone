@@ -30,6 +30,29 @@ p {
 .icoMenu {
   font-size: 28px;
 }
+.credit_list_box {
+  width: 380px;
+  height: 350px;
+  top: 203px;
+  left: 210px;
+}
+
+.credit_inner {
+  width: 340px;
+  height: 320px;
+}
+
+.title_box::after {
+  width: 340px;
+  height: 2px;
+  top: 357px;
+}
+
+.txt_box {
+  height: 90%;
+}
+
+
 
 .mySwiper2 .swiper-wrapper .swiper-slide .Carousel_MO_01 {
   transform: initial;
