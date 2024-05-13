@@ -321,9 +321,9 @@ main {
   gap: 10px;
 
   /* position */
-  position: fixed;
-  top: 312px;
-  right: -1300px;
+  position: absolute;
+  top: 163px;
+  left: 630px;
   /* z-index: 999; */
   /* style */
   border-radius: 10px;
