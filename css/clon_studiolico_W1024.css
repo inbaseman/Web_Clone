@@ -17,12 +17,12 @@
 
 
 
-.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_PC_01 {
+.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_PC {
   position: absolute;
   opacity: 0;
 }
 
-.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_MO_01 {
+.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_MO {
   object-fit: cover;
   transform: translate(0px, -100px) scale(1.2);
 }
