@@ -23,15 +23,16 @@
 
 
 
-.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_PC_01 {
+.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_PC {
   position: absolute;
   opacity: 0;
 }
 
-.mySwiper2 .swiper-wrapper .swiper-slide .Carousel_MO_01 {
-  object-fit: cover;
+/* .mySwiper2 .swiper-wrapper .swiper-slide .Carousel_MO {
   transform: translate(0px, -100px) scale(1.2);
-}
+
+
+} */
 
 
 /* 스와이프 네비게이션 위치 변경 */
