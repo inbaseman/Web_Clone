@@ -40,8 +40,8 @@ h2 {
   margin-bottom: 15px;
 }
 p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
 }
 a {
   /* font-size: 20px; */
@@ -52,11 +52,21 @@ a:visited, a:link {
   text-decoration: none;
 }
 
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
 /* .white {
   color: #fff;
 } */
 
 .inner {
+  width: 100%;
   height: 100%;
   padding: 40px 60px;
   display: flex;
@@ -193,9 +203,12 @@ footer {
 
 
 
+
 .main_txt {
+  width: auto;
   display: flex;
   flex-direction: column;
+
   /* justify-content: flex-start; */
   /* margin: 80px 180px ; */
   gap: 40px;
@@ -206,4 +219,12 @@ footer {
 
 .career_top {
   margin-top: 90px;
+}
+.sp_txt {
+  background: url(/Web_Clone/images/studiolico/sp_txt.png) 0 0 no-repeat;
+  background-size: 400px 400px;
+}
+
+.career_top h2 {
+  height: 26px;
 }
