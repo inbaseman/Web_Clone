@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.credit_list_box {
+  top: 303px;
+  left: 110px;
+}
+
+.title_box::after {
+  top: 457px;
+}
