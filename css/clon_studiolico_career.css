@@ -201,8 +201,12 @@ footer {
 }
 
 
-.top_inner {
+.top_inner,
+.mid_inner,
+.bot_inner {
   width: 1200px;
+  margin: 0 auto;
+  padding-top: 90px;
   /* max-width: 1200px; */
 }
 
@@ -222,14 +226,19 @@ footer {
   /* left: 230px; */
 }
 
-.career_top {
-  margin-top: 90px;
-}
 .sp_txt {
   background: url(/Web_Clone/images/studiolico/sp_txt.png) 0 0 no-repeat;
   background-size: 400px 400px;
+  height: 26px;
 }
 
-.career_top h2 {
-  height: 26px;
+.career_mid h2 {
+  font-family: 'museo_slab_900';
+  font-size: 34px;
+  font-weight: 400;
+}
+.career_bot h2 {
+  font-family: "Noto Sans KR";
+  font-size: 28px;
+  font-weight: 700;
 }
