@@ -242,3 +242,26 @@ footer {
   font-size: 28px;
   font-weight: 700;
 }
+
+
+
+
+.myacordion {
+  --bs-accordion-btn-padding-y: 2rem;
+  --bs-border-color: #000;
+  --bs-accordion-btn-icon: url(/Web_Clone/images/studiolico/sp_ico_career.png)
+}
+
+.myacordion .title_txt {
+  font-family: 'museo_slab_900';
+  font-size: 24px;
+  margin-right: 40px;
+}
+
+.myacordion span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 20px;
+
+}
