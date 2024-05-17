@@ -19,7 +19,7 @@
   margin: 0;
   box-sizing: border-box;
   /* background-color: darkblue; */
-  outline: 1px solid whitesmoke;
+  /* outline: 1px solid black; */
 }
 
 :root {
@@ -249,8 +249,66 @@ footer {
 .myacordion {
   --bs-accordion-btn-padding-y: 2rem;
   --bs-border-color: #000;
-  --bs-accordion-btn-icon: url(/Web_Clone/images/studiolico/sp_ico_career.png)
+  /* --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'><path d='m5 10L5 1'/><path d='m0 5h10'/></svg>"); */
+
+  /* --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http: //www.w3.org/2000/svg' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'><path d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z' /> </svg>"); */
+
+  --bs-accordion-btn-icon-width: 2rem;
+  --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
 }
+
+
+
+.accordion-button {
+  border: 1px solid black;
+
+}
+.accordion-button::after {
+  background-image: url(/Web_Clone/images/studiolico/plus-lg.svg);
+  transition: initial;
+}
+.accordion-button.flex_column .title_txt {
+  margin: 0 0 20px 0;
+}
+
+.accordion-button.collapsed p {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) {
+  height: 230px;
+  color: white;
+
+  background-image: url(/Web_Clone/images/studiolico/img_work_life_pc_01.jpg);
+  background-size: cover;
+  box-shadow: none;
+}
+
+
+
+.accordion-button:not(.collapsed) > span {
+  display: none;
+}
+.accordion-button:not(.collapsed) > .title_txt {
+  display: initial;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/Web_Clone/images/studiolico/x-lg.svg);
+
+
+}
+
+.accordion-item {
+  margin: 0px 0px -2px 0px;
+}
+.accordion-flush > .accordion-item > .accordion-collapse {
+  border: 1px solid black;
+}
+
+/* .accordion-body {
+  display: none;
+} */
 
 .myacordion .title_txt {
   font-family: 'museo_slab_900';
@@ -265,3 +323,18 @@ footer {
   margin-right: 20px;
 
 }
+
+.flex_column {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+}
+
+
+
+/* [data-bs-theme=dark] .accordion-button::after {
+
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236ea8fe'%3e%3cpath fill-rule='evenodd'd='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+} */
