@@ -40,8 +40,9 @@ h2 {
   margin-bottom: 15px;
 }
 p {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom:0;
 }
 a {
   /* font-size: 20px; */
@@ -254,7 +255,9 @@ footer {
   /* --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http: //www.w3.org/2000/svg' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'><path d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z' /> </svg>"); */
 
   --bs-accordion-btn-icon-width: 2rem;
-  --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+  --bs-accordion-active-bg: none;
+  --bs-accordion-transition : initial;
+  margin-top: 30px; 
 }
 
 
@@ -263,6 +266,10 @@ footer {
   border: 1px solid black;
 
 }
+.accordion-button:focus{
+  box-shadow:initial
+}
+
 .accordion-button::after {
   background-image: url(/Web_Clone/images/studiolico/plus-lg.svg);
   transition: initial;
@@ -271,7 +278,7 @@ footer {
   margin: 0 0 20px 0;
 }
 
-.accordion-button.collapsed p {
+.accordion-button.collapsed .title_txt_click {
   display: none;
 }
 
@@ -279,9 +286,27 @@ footer {
   height: 230px;
   color: white;
 
-  background-image: url(/Web_Clone/images/studiolico/img_work_life_pc_01.jpg);
+  /* background-image: url(/Web_Clone/images/studiolico/img_work_life_pc_01.jpg); */
   background-size: cover;
   box-shadow: none;
+}
+
+.accordion-button:not(.collapsed).item01_btn{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(/Web_Clone/images/studiolico/img_work_life_pc_01.jpg) lightgray 50% / cover no-repeat;
+
+}
+.accordion-button:not(.collapsed).item02_btn{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(/Web_Clone/images/studiolico/img_work_life_pc_02.jpg) lightgray 50% / cover no-repeat;
+  height: 280px;
+
+}
+.accordion-button:not(.collapsed).item03_btn{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(/Web_Clone/images/studiolico/img_work_life_pc_03.jpg) lightgray 50% / cover no-repeat;
+}
+.accordion-button:not(.collapsed).item04_btn{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(/Web_Clone/images/studiolico/img_work_life_pc_04.jpg) lightgray 50% / cover no-repeat;
+  height: 350px;
+
 }
 
 
@@ -289,12 +314,23 @@ footer {
 .accordion-button:not(.collapsed) > span {
   display: none;
 }
-.accordion-button:not(.collapsed) > .title_txt {
-  display: initial;
+/* .accordion-button:not(.collapsed) > .title_txt, */
+.accordion-button:not(.collapsed) > .title_txt_click
+ {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion-button:not(.collapsed) > .title_txt_click .title_txt{
+  margin-bottom: 10px;
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: url(/Web_Clone/images/studiolico/x-lg.svg);
+  position: absolute;
+    top: 20px;
+    right: 20px;
 
 
 }
@@ -302,9 +338,9 @@ footer {
 .accordion-item {
   margin: 0px 0px -2px 0px;
 }
-.accordion-flush > .accordion-item > .accordion-collapse {
+/* .accordion-flush > .accordion-item > .accordion-collapse {
   border: 1px solid black;
-}
+} */
 
 /* .accordion-body {
   display: none;
@@ -330,7 +366,6 @@ footer {
   align-items: flex-start;
 
 }
-
 
 
 /* [data-bs-theme=dark] .accordion-button::after {
