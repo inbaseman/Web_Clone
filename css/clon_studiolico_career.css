@@ -48,10 +48,10 @@ a {
   /* font-size: 20px; */
   font-weight: 500;
 }
-a:visited, a:link {
+/* a:visited, a:link {
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
-}
+} */
 
 .blind {
   position: absolute;
@@ -61,6 +61,8 @@ a:visited, a:link {
   margin: -1px;
   overflow: hidden;
 }
+
+
 
 /* .white {
   color: #fff;
@@ -111,6 +113,17 @@ nav a {
   height: 4px;
   align-self: stretch;
   background: rgba(0, 0, 0, 0.00);
+}
+
+.icoMenu,
+.icoClose {
+  /* font-size: 2rem;
+  color: #fff;
+  display: flex;
+  height: 100%;
+  align-items: center; */
+  display: none;
+
 }
 .manu01:visited, .manu01:link,
 .manu02:visited, .manu02:link,
@@ -202,12 +215,18 @@ footer {
 }
 
 
-.top_inner,
+.top_inner {
+  width: 1200px;
+  height: 900px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
 .mid_inner,
 .bot_inner {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-bottom: 200px;
   /* max-width: 1200px; */
 }
 
@@ -259,7 +278,8 @@ footer {
   border: 1px solid black;
 
 }
-.myacordion .accordion-button:focus {
+.myacordion .accordion-button:focus,
+.myacordion2 .accordion-button:focus {
   box-shadow: initial
 }
 
@@ -360,12 +380,215 @@ footer {
 }
 
 
+.myacordion2 {
+  --bs-accordion-btn-padding-y: 2rem;
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-icon-width: 2.25rem;
+}
+
 .myacordion2 .title_txt {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
+
+.myacordion2 .title_sub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  gap: 5px;
+
+  /* font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 700; */
+}
+
+.myacordion2 .title_sub span:nth-of-type(1) {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+.myacordion2 .title_sub span:nth-of-type(2) {
+  color: #ababab;
+}
+
 
 .myacordion2 .accordion-body {
   background-color: #f7f7fb;
+}
+
+.myacordion2 .accordion-button {
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+}
+
+.myacordion2 .accordion-button:not(.collapsed) {
+  /* height: 100px; */
+  background-color: white;
+  color: black;
+}
+
+.button {
+  padding: 10px 24px 10px;
+  background: #000;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.bot_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.myacordion2::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  background: black;
+}
+
+.myacordion2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 100px;
+  background: black;
+}
+
+
+
+
+.sub_career_diagram {
+  position: absolute;
+  top: 194px;
+  /* right: 708px; */
+  right: 380px;
+  z-index: 30;
+  width: 645px;
+  height: 645px;
+}
+
+.diagram_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  width: 146px;
+  height: 139px;
+  background: url(/Web_Clone/images/studiolico/img_payer_pc.png) no-repeat;
+  background-size: 146px 139px;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center_txt {
+  position: absolute;
+  z-index: 40;
+  width: 150px;
+  min-height: 45px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.34;
+  text-align: center;
+  /* font-family: NotoSansM, sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
+
+}
+.txt2 {
+  display: none;
+}
+.com {
+  top: -50px;
+  left: 0;
+}
+.know {
+  top: 40px;
+  left: 125px;
+}
+.pasn {
+  top: 149px;
+  left: 54px;
+}
+.crtv {
+  top: 149px;
+  left: -54px;
+}
+.fun {
+  top: 40px;
+  left: -125px;
+}
+.en {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.33;
+  font-family: Museo_Sans_500, sans-serif;
+}
+
+.diagram_circle_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  width: 516px;
+  height: 516px;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.diagram_circle {
+  position: absolute;
+  z-index: 30;
+  width: 514px;
+  height: 514px;
+  border: 1px solid #000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.diagram_circle_wrap .diagram_circle.top {
+  top: -63px;
+}
+.diagram_circle_wrap .diagram_circle.left {
+  top: 45px;
+  left: -62px;
+}
+.diagram_circle_wrap .diagram_circle.right {
+  top: 45px;
+  left: 66px;
+}
+
+.diagram_circle_wrap .diagram_circle .circle_txt {
+  position: absolute;
+  z-index: 40;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  /* font-family: NotoSansM, sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
+
+}
+.diagram_circle_wrap .diagram_circle .circle_txt.new {
+  top: 51px;
+  left: 197px;
+}
+.diagram_circle_wrap .diagram_circle .circle_txt.hori {
+  top: 330px;
+  left: 47px;
+}
+.diagram_circle_wrap .diagram_circle .circle_txt.grown {
+  top: 330px;
+  right: 47px;
 }

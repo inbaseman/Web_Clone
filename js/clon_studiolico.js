@@ -39,6 +39,19 @@ closeButton02.addEventListener('click', function () {
 
 
 
+
+// let diagram_center = document.querySelector('.diagram_center');
+// let center_txt = document.querySelector('.center_txt');
+// let diagram_circle = document.querySelector('.diagram_circle');
+// let circle_txt = document.querySelector('.circle_txt');
+
+
+// diagram_center.addEventListener("load", function () {
+//   diagram_center.style.opacity = 0.5;
+// });
+
+
+
 // 반응형 모바일에서 대메뉴 a를 클릭시, 링크기능 막고 하위메뉴 펼치기
 let responsive = true;
 window.addEventListener('resize', () => {
