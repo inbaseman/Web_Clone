@@ -79,3 +79,8 @@ https://inbaseman.github.io/Web_Clone/
 - 서브페이지 CONTACT [대기...]⚙
 - 랜딩페이지 [대기...]⚙
 >진행률 약 40%
+
+<!-- 각 서브페이지 반응형 만들어야함(WORK는 완료) -->
+<!-- CAERRE 다이어그램 트랜지션 어떻게 넣어야 되나 -->
+<!-- (css에서 트랜지션 컬러를 RGBA로 주고 A값 조절 or -->
+<!-- js에서 addEventListener의 load이벤트를 이용해서) -->
