@@ -468,6 +468,14 @@ footer {
 
 
 
+.diagram_center.transition_opacity,
+.center_txt.transition_opacity,
+.diagram_circle.transition_opacity,
+.diagram_circle_wrap .diagram_circle .circle_txt.transition_opacity {
+  opacity: 1;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
 
 .sub_career_diagram {
   position: absolute;
@@ -491,7 +499,10 @@ footer {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  opacity: 0;
+  /* transition: 1s; */
 }
+
 
 .center_txt {
   position: absolute;
@@ -504,6 +515,7 @@ footer {
   text-align: center;
   /* font-family: NotoSansM, sans-serif; */
   font-family: "Noto Sans KR", sans-serif;
+  opacity: 0;
 
 }
 .txt2 {
@@ -556,6 +568,7 @@ footer {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  opacity: 0;
 }
 .diagram_circle_wrap .diagram_circle.top {
   top: -63px;
@@ -578,7 +591,7 @@ footer {
   text-align: center;
   /* font-family: NotoSansM, sans-serif; */
   font-family: "Noto Sans KR", sans-serif;
-
+  opacity: 0;
 }
 .diagram_circle_wrap .diagram_circle .circle_txt.new {
   top: 51px;
