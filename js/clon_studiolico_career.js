@@ -23,7 +23,7 @@ console.log(center_txt);
 
 
 
-function Toggle_transition_opacity_arr(taget_name) {
+function Toggle_transition_opacity_arrays(taget_name) {
   Array.from(taget_name).forEach((each) => {
     each.classList.toggle("transition_opacity");
   });
@@ -39,13 +39,13 @@ setTimeout(() => {
   Toggle_transition_opacity(diagram_center);
 }, 0);
 setTimeout(() => {
-  Toggle_transition_opacity_arr(center_txt);
+  Toggle_transition_opacity_arrays(center_txt);
 }, 500);
 setTimeout(() => {
-  Toggle_transition_opacity_arr(diagram_circle);
+  Toggle_transition_opacity_arrays(diagram_circle);
 }, 1000);
 setTimeout(() => {
-  Toggle_transition_opacity_arr(circle_txt);
+  Toggle_transition_opacity_arrays(circle_txt);
 }, 1500);
 
 
