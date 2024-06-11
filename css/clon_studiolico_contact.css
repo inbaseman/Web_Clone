@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'museo_slab_900';
+  src: url(/Web_Clone/css/font/museo-slab/Museo_Slab_900.otf);
+}
+@font-face {
+  font-family: 'museo_slab_700';
+  src: url(/Web_Clone/css/font/museo-slab/Museo_Slab_700.otf);
+}
+@font-face {
+  font-family: 'museo_slab_500';
+  src: url(/Web_Clone/css/font/museo-slab/Museo_Slab_500.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: darkblue; */
+  /* outline: 1px solid black; */
+}
+
+:root {
+  font-family: "Noto Sans KR", sans-serif;
+  /* color: #FFF; */
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+}
+h1 {
+  font-family: 'museo_slab_900';
+  font-size: 80px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+p {
+  font-size: 18px;
+  font-weight: 500;
+  /* margin-bottom: 30px; */
+}
+a {
+  /* font-size: 20px; */
+  font-weight: 500;
+}
+/* a:visited, a:link {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+} */
+
+.spot {
+  font-weight: 700;
+
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+
+
+/* .white {
+  color: #fff;
+} */
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav {
+  /* layout */
+  display: flex;
+  /* width: 1760px; */
+  height: 50px;
+  align-items: center;
+  gap: 82px;
+  /* position */
+  /* position: absolute;
+  left: 75px;
+  top: 50px;*/
+  z-index: 100;
+}
+nav a {
+  font-family: 'museo_slab_500';
+  font-size: 21px;
+}
+.nav_logo {
+  width: 100px;
+  height: 50px;
+  /* background: url(/Web_Clone/images/studiolico/sp_logo.png) -353.5px -315px / 750% 800% no-repeat; */
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -353.5px -260.066px / 750% 800% no-repeat;
+}
+.nav_manu_list {
+  /* layout */
+  display: flex;
+  align-items: flex-start;
+  gap: 38px;
+  /* typo */
+  color: rgba(0, 0, 0, 0.40);
+  text-align: center;
+  font-size: 23px;
+}
+.rectangle {
+  height: 4px;
+  align-self: stretch;
+  background: rgba(0, 0, 0, 0.00);
+}
+
+.icoMenu,
+.icoClose {
+  /* font-size: 2rem;
+  color: #fff;
+  display: flex;
+  height: 100%;
+  align-items: center; */
+  display: none;
+
+}
+.manu01:visited, .manu01:link,
+.manu02:visited, .manu02:link,
+.manu03:visited, .manu03:link
+/* ,.manu04:visited, .manu04:link  */
+  {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+.manu01:hover,
+.manu02:hover,
+.manu03:hover
+/* ,.manu04:hover  */
+  {
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+  font-family: 'museo_slab_700';
+}
+.manu04 {
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+  text-decoration: none;
+}
+.manu04 .rectangle {
+  background: rgba(0, 0, 0, 1.00);
+}
+
+footer {
+  /* layout */
+  display: flex;
+  /* width: 1760px; */
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  /* position */
+  /* position: absolute;
+  left: 75px;
+  bottom: 45px; */
+  z-index: 100;
+
+  /* typo */
+  color: rgba(0, 0, 0, 0.50);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+.logo_webtoon {
+  display: block;
+  width: 43px;
+  height: 40px;
+  /* background: url(/Web_Clone/images/studiolico/sp_logo.png) -403.41px -29.118px / 1744.187% 990.712% no-repeat; */
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -353.806px -29.118px / 1744.187% 990.712% no-repeat;
+}
+.logo_naver {
+  display: block;
+  width: 64px;
+  height: 12px;
+  /* background: url(/Web_Clone/images/studiolico/sp_logo.png) -244.373px 0.517px / 1171.875% 3333.333% no-repeat; */
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -244.373px -29.62px / 1171.875% 3076.922% no-repeat;
+}
+.privacy_policy {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.privacy_policy::before {
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: #ccc;
+  content: "";
+}
+.privacy_policy:visited, .privacy_policy:link {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  letter-spacing: -0.75px;
+  text-decoration-line: underline;
+}
+
+.ethicsline:visited, .ethicsline:link {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.top_inner,
+.mid_inner,
+.bot_inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  padding: 60px 0;
+  /* max-width: 1200px; */
+}
+
+
+
+
+.main_txt {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: flex-start; */
+  /* margin: 80px 180px ; */
+  gap: 60px;
+  /* position: absolute; */
+  /* top: 150px; */
+  /* left: 230px; */
+}
+
+
+
+
+.bot_inner .mathod_list {
+  display: flex;
+  /* margin: auto; */
+  gap: 2%;
+}
+.bot_inner .mathod_list > .sec01 {
+  /* width: 30%; */
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 30% 1 1;
+}
+.bot_inner .mathod_list .partition_line {
+  height: 1px;
+  align-self: stretch;
+  background-color: #000;
+  margin-bottom: 15px;
+}
+.bot_inner .mathod_list a {
+  display: inline-block;
+  width: 150px;
+  height: 47px;
+  margin-top: 16px;
+  background-color: #000;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  line-height: 47px;
+  text-align: center;
+}
