@@ -222,13 +222,20 @@ footer {
 }
 
 .top_inner,
-.mid_inner,
 .bot_inner {
   width: 1200px;
   margin: 0 auto;
-  padding-bottom: 100px;
-  padding: 60px 0;
+  /* padding-bottom: 100px; */
+  /* padding: 60px 0; */
+  padding-top: 60px;
+  padding-bottom: 30px;
   /* max-width: 1200px; */
+}
+
+.mid_inner {
+  margin: 0 auto;
+  /* padding-bottom: 100px; */
+  /* padding: 60px 0; */
 }
 
 
@@ -250,18 +257,24 @@ footer {
 
 
 
+
+
 .bot_inner .mathod_list {
   display: flex;
   /* margin: auto; */
   gap: 2%;
 }
-.bot_inner .mathod_list > .sec01 {
+.bot_inner .mathod_list > .section {
   /* width: 30%; */
-  height: 210px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 30% 1 1;
+  margin-bottom: 100px;
+}
+.bot_inner .mathod_list > .section a {
+  text-decoration: none;
 }
 .bot_inner .mathod_list .partition_line {
   height: 1px;
