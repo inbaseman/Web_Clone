@@ -45,6 +45,12 @@ h2 {
   margin-bottom: 15px;
 }
 
+h3 {
+  font-family: 'museo_slab_900';
+  font-size: 42px;
+  font-weight: 900;
+}
+
 p {
   font-size: 18px;
   font-weight: 500;
@@ -350,7 +356,7 @@ footer {
   /* list-style: none; */
 }
 
-.history_diagram ul>li {
+.history_diagram ul > li {
   width: 25%;
   position: relative;
   margin: 0px -2px 50px -2px;
@@ -359,7 +365,7 @@ footer {
   display: inline-block
 }
 
-.history_diagram ul>li .diagram_years {
+.history_diagram ul > li .diagram_years {
   position: absolute;
   bottom: 15px;
   width: 100%;
@@ -383,7 +389,7 @@ footer {
   /* word-break: break-all; */
 }
 
-.history_diagram ul>li .diagram_txt {
+.history_diagram ul > li .diagram_txt {
   position: absolute;
   top: 10px;
   width: 100%;
@@ -394,7 +400,7 @@ footer {
 
 }
 
-.history_diagram ul>li .diagram_txt_2 {
+.history_diagram ul > li .diagram_txt_2 {
   position: absolute;
   top: -20px;
   width: 100%;
@@ -404,7 +410,7 @@ footer {
 }
 
 
-.history_diagram ul>li::before {
+.history_diagram ul > li::before {
   content: "";
   position: absolute;
   top: 45%;
@@ -420,7 +426,7 @@ footer {
 }
 
 
-.history_diagram ul>li::after {
+.history_diagram ul > li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -455,6 +461,62 @@ footer {
   height: 26px;
   background-size: 400px 400px;
 }
+
+.bot_inner .at_lico {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+
+.bot_inner .at_lico .box {
+  /* position: relative;
+  display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 330px;
+  height: 330px;
+  padding-right: 40px;
+  /* margin-left: -42px; */
+  /* margin-right: 0; */
+  background: url(/Web_Clone/images/studiolico/img_about_box.png) no-repeat;
+  background-size: 330px 330px;
+  /* background-color: transparent; */
+  /* overflow: visible; */
+}
+
+.box.second {
+  transform: translate(-42px, 40px);
+  transition: 1s;
+}
+
+.box.third {
+  transform: translate(-84px, 80px);
+  transition: 1s;
+
+}
+
+.box.fourth {
+  transform: translate(-126px, 120px);
+  transition: 1s;
+
+}
+
+.second.transition {
+  transform: translate(-42px, 0px);
+  transition: 1s;
+}
+.third.transition {
+  transform: translate(-84px, 0px);
+  transition: 1s;
+}
+.fourth.transition {
+  transform: translate(-126px, 0px);
+  transition: 1s;
+}
+
 
 
 .carousel_inner .sp_txt {
