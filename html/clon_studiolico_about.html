@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABOUT</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
   <link rel="stylesheet" href="/Web_Clone/css/clon_studiolico_about.css">
 </head>
 
@@ -194,7 +197,92 @@
               <h2 class="sp_txt">
                 <span class="blind">OFFICE</span>
               </h2>
+              <!-- style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" -->
+              <div class="swiper main_Swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_001.jpg" alt="메인이미지1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_002.jpg" alt="메인이미지2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_003.jpg" alt="메인이미지3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_004.jpg" alt="메인이미지4">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_005.jpg" alt="메인이미지5">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_006.jpg" alt="메인이미지6">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_007.jpg" alt="메인이미지7">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_008.jpg" alt="메인이미지8">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_009.jpg" alt="메인이미지9">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_010.jpg" alt="메인이미지10">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_011.jpg" alt="메인이미지11">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_012.jpg" alt="메인이미지12">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
 
+              <!-- thumbsSlider=""  -->
+              <div class="swiper thumbs_Swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper ">
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_001.jpg" alt="썸네일이미지1">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_002.jpg" alt="썸네일이미지2">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_003.jpg" alt="썸네일이미지3">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_004.jpg" alt="썸네일이미지4">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_005.jpg" alt="썸네일이미지5">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_006.jpg" alt="썸네일이미지6">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_007.jpg" alt="썸네일이미지7">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_008.jpg" alt="썸네일이미지8">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_009.jpg" alt="썸네일이미지9">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_010.jpg" alt="썸네일이미지10">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_011.jpg" alt="썸네일이미지11">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../images/studiolico/about_012.jpg" alt="썸네일이미지12">
+                  </div>
+                </div>
+              </div>
 
             </div>
           </article>
@@ -220,7 +308,48 @@
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <script>
+    var swiper = new Swiper(".thumbs_Swiper", {
+      loop: true,
+      spaceBetween: 12,
+      slidesPerView: 6,
+      // freeMode: true,
+      // watchSlidesProgress: true,
+      // grabCursor: true,
+      slidesPerGroup: 6,
+
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+        clickable: true,
+        // dynamicBullets : true,
+        // dynamicMainBullets : 1,
+      },
+
+
+
+    });
+
+    var swiper2 = new Swiper(".main_Swiper", {
+      loop: true,
+      spaceBetween: 12,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+        // autoScrollOffset : 1,
+        // multipleActiveThumbs: false
+      },
+
+
+
+      grabCursor: true,
+    });
+  </script>
 
 
   <script src="/Web_Clone/js/clon_studiolico_about.js"></script>
