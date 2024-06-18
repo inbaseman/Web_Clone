@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INDEX</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
   <link rel="stylesheet" href="/Web_Clone/css/clon_studiolico_index.css">
 
@@ -51,29 +53,98 @@
     <main>
       <video autoplay loop muted playsinline poster="/Web_Clone/images/poster.png"
         src="/Web_Clone/images/video.mp4"></video>
-      <a href="#" class="btn_scroll_down"></a>
-      <div class="section_inner sec01">
-        <!-- animate__animated animate__fadeInUp animate__fast -->
-        <!-- animate__animated animate__fadeOut animate__fast -->
-        <div class="main_txt animate__animated animate__fadeInUp animate__fast">LIFE WITH CONTENT.</div>
-        <div class="sub_txt animate__animated animate__fadeInUp animate__fast">이미지와 영상기반의 다양하고 재미있는
-          디지털 콘텐츠를 제작합니다
+      <!-- <a href="#" class="btn_scroll_down"></a> -->
+
+      <!-- <div class="section_inner sec01">
+        <div class="main_txt sec01_main">
+          LIFE WITH CONTENT.
         </div>
-        <a href="/Web_Clone/html/clon_studiolico_about.html"
-          class="link_txt animate__animated animate__fadeInUp animate__fast">ABOUT US</a>
-      </div>
-      <div class="section_inner sec02 blind">
-        <div class="main_txt">Show You<br>What We Made</div>
-        <div class="sub_txt">스튜디오 리코에서 제작 및 기획 중인 다양한 콘텐츠를 소개합니다.
+        <div class="sub_txt sec01_sub">
+          이미지와 영상기반의 다양하고 재미있는 디지털 콘텐츠를 제작합니다
         </div>
-        <a href="/Web_Clone/html/clon_studiolico_work.html" class="link_txt">WORK</a>
-      </div>
-      <div class="section_inner sec03 blind">
-        <div class="main_txt">Working with<br>Creative Players</div>
-        <div class="sub_txt">스튜디오 리코와 함께 성장해 나갈 크리에이티브한 인재를 초대합니다.
+        <a href="/Web_Clone/html/clon_studiolico_about.html" class="link_txt sec01_link">
+          ABOUT US
+        </a>
+      </div> -->
+
+      <!-- <div class="section_inner sec02 blind">
+        <div class="main_txt sec02_main blind">
+          Show You<br>What We Made
         </div>
-        <a href="/Web_Clone/html/clon_studiolico_career.html" class="link_txt">CAREER</a>
+        <div class="sub_txt sec02_sub blind">
+          스튜디오 리코에서 제작 및 기획 중인 다양한 콘텐츠를 소개합니다.
+        </div>
+        <a href="/Web_Clone/html/clon_studiolico_work.html" class="link_txt sec02_link blind">
+          WORK
+        </a>
+      </div> -->
+
+      <!-- <div class="section_inner sec03 blind">
+        <div class="main_txt sec03_main blind">
+          Working with<br>Creative Players
+        </div>
+        <div class="sub_txt sec03_sub blind">
+          스튜디오 리코와 함께 성장해 나갈 크리에이티브한 인재를 초대합니다.
+        </div>
+        <a href="/Web_Clone/html/clon_studiolico_career.html" class="link_txt sec03_link blind">
+          CAREER
+        </a>
+      </div> -->
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="section_inner sec01">
+              <div class="main_txt sec01_main">
+                LIFE WITH CONTENT.
+              </div>
+              <div class="sub_txt sec01_sub">
+                이미지와 영상기반의 다양하고 재미있는 디지털 콘텐츠를 제작합니다
+              </div>
+              <a href="/Web_Clone/html/clon_studiolico_about.html" class="link_txt sec01_link">
+                ABOUT US
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="section_inner sec02 blind">
+              <div class="main_txt sec02_main blind">
+                Show You<br>What We Made
+              </div>
+              <div class="sub_txt sec02_sub blind">
+                스튜디오 리코에서 제작 및 기획 중인 다양한 콘텐츠를 소개합니다.
+              </div>
+              <a href="/Web_Clone/html/clon_studiolico_work.html" class="link_txt sec02_link blind">
+                WORK
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="section_inner sec03 blind">
+              <div class="main_txt sec03_main blind">
+                Working with<br>Creative Players
+              </div>
+              <div class="sub_txt sec03_sub blind">
+                스튜디오 리코와 함께 성장해 나갈 크리에이티브한 인재를 초대합니다.
+              </div>
+              <a href="/Web_Clone/html/clon_studiolico_career.html" class="link_txt sec03_link blind">
+                CAREER
+              </a>
+            </div>
+          </div>
+          <!-- <div class="swiper-slide">Slide 4</div> -->
+          <!-- <div class="swiper-slide">Slide 5</div> -->
+          <!-- <div class="swiper-slide">Slide 6</div> -->
+          <!-- <div class="swiper-slide">Slide 7</div> -->
+          <!-- <div class="swiper-slide">Slide 8</div> -->
+          <!-- <div class="swiper-slide">Slide 9</div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div> -->
       </div>
+
+
 
 
 
@@ -89,6 +160,32 @@
       <div class="C_right">&#169; 2022 STUDIO LICO Corp. All Rights Reserved</div>
     </footer>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      loop: true,
+      grabCursor: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+
+
+
+    });
+  </script>
 
 
   <script src="/Web_Clone/js/clon_studiolico_index.js"></script>
