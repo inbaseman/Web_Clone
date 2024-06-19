@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INDEX</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 
   <link rel="stylesheet" href="/Web_Clone/css/clon_studiolico_index.css">
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!-- a -->
+  <!-- a -->
 
   <div class="inner">
     <nav>
@@ -51,8 +51,8 @@
     </nav>
 
     <main>
-      <video autoplay loop muted playsinline poster="/Web_Clone/images/poster.png"
-        src="/Web_Clone/images/video.mp4"></video>
+      <!-- <video autoplay loop muted playsinline poster="/Web_Clone/images/poster.png"
+        src="/Web_Clone/images/video.mp4"></video> -->
       <!-- <a href="#" class="btn_scroll_down"></a> -->
 
       <!-- <div class="section_inner sec01">
@@ -92,6 +92,25 @@
       </div> -->
 
       <div class="swiper mySwiper">
+        <video autoplay loop muted playsinline poster="/Web_Clone/images/poster.png"
+          src="/Web_Clone/images/video.mp4"></video>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide sec no1 ">Slide 1</div>
+          <div class="swiper-slide sec no2 blind">Slide 2</div>
+          <div class="swiper-slide sec no3 blind">Slide 3</div>
+          <div class="swiper-slide sec no4 blind">Slide 4</div>
+          <div class="swiper-slide sec no5 blind">Slide 5</div>
+          <div class="swiper-slide sec no6 blind">Slide 6</div>
+          <div class="swiper-slide sec no7 blind">Slide 7</div>
+          <div class="swiper-slide sec no8 blind">Slide 8</div>
+          <div class="swiper-slide sec no9 blind">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <!-- <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="section_inner sec01">
@@ -107,44 +126,42 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="section_inner sec02 blind">
-              <div class="main_txt sec02_main blind">
+            <div class="section_inner sec02 ">
+              <div class="main_txt sec02_main ">
                 Show You<br>What We Made
               </div>
-              <div class="sub_txt sec02_sub blind">
+              <div class="sub_txt sec02_sub ">
                 스튜디오 리코에서 제작 및 기획 중인 다양한 콘텐츠를 소개합니다.
               </div>
-              <a href="/Web_Clone/html/clon_studiolico_work.html" class="link_txt sec02_link blind">
+              <a href="/Web_Clone/html/clon_studiolico_work.html" class="link_txt sec02_link ">
                 WORK
               </a>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="section_inner sec03 blind">
-              <div class="main_txt sec03_main blind">
+            <div class="section_inner sec03 ">
+              <div class="main_txt sec03_main ">
                 Working with<br>Creative Players
               </div>
-              <div class="sub_txt sec03_sub blind">
+              <div class="sub_txt sec03_sub ">
                 스튜디오 리코와 함께 성장해 나갈 크리에이티브한 인재를 초대합니다.
               </div>
-              <a href="/Web_Clone/html/clon_studiolico_career.html" class="link_txt sec03_link blind">
+              <a href="/Web_Clone/html/clon_studiolico_career.html" class="link_txt sec03_link ">
                 CAREER
               </a>
             </div>
-          </div>
-          <!-- <div class="swiper-slide">Slide 4</div> -->
-          <!-- <div class="swiper-slide">Slide 5</div> -->
-          <!-- <div class="swiper-slide">Slide 6</div> -->
-          <!-- <div class="swiper-slide">Slide 7</div> -->
-          <!-- <div class="swiper-slide">Slide 8</div> -->
-          <!-- <div class="swiper-slide">Slide 9</div> -->
-        </div>
+          </div> -->
+      <!-- <div class="swiper-slide">Slide 4</div> -->
+      <!-- <div class="swiper-slide">Slide 5</div> -->
+      <!-- <div class="swiper-slide">Slide 6</div> -->
+      <!-- <div class="swiper-slide">Slide 7</div> -->
+      <!-- <div class="swiper-slide">Slide 8</div> -->
+      <!-- <div class="swiper-slide">Slide 9</div> -->
+      <!-- </div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <!-- <div class="swiper-button-prev"></div> -->
-      </div>
-
-
+        <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
+      <!-- </div> -->
 
 
 
@@ -165,21 +182,68 @@
 
   <!-- Initialize Swiper -->
   <script>
+    // const sec01 = document.querySelector('.sec01');
+    // const sec02 = document.querySelector('.sec02');
+    // const sec03 = document.querySelector('.sec03');
+
+
+
     var swiper = new Swiper(".mySwiper", {
       direction: "vertical",
       loop: true,
       grabCursor: true,
+      effect: "fade",
 
       navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
 
       },
 
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        // renderBullet: function (index, className) {
+        //   return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        // },
       },
+
+      // on: {
+
+
+      // slideChangeTransitionStart: function () {
+      // 슬라이드 전환 트랜지션이 시작되기 전에 발생합니다. (빼야될 것)
+      // sec01.classList.remove("blind");
+      // sec02.classList.remove("blind");
+      // sec03.classList.remove("blind");
+      // let slide_active = swiper_slide.classList.contains("blind");
+      // console.log(slide_active);
+
+      // if (slide_active === true) {
+      //   swiper_slide.classList.remove("blind");
+      // } else {
+      //   swiper_slide.classList.add("blind");
+      // }
+
+
+      // },
+
+      // slideChangeTransitionEnd: function () {
+      // 슬라이드 전환 트랜지션이 완료된 후에 발생합니다. (넣어야 될것)
+      // sec01.classList.add("blind");
+      // sec02.classList.add("blind");
+      // sec03.classList.add("blind");
+      // if (!slide_active) {
+      //   swiper_slide.classList.add("blind");
+      // }
+
+      // let slide_active = swiper_slide.classList.contains("blind");
+
+      // if (slide_active === true) {
+      //   swiper_slide.classList.remove("blind");
+      // } else {
+      //   swiper_slide.classList.add("blind");
+      // }
+      // },
 
 
 
