@@ -14,8 +14,6 @@
 </head>
 
 <body>
-  <!-- a -->
-
   <div class="inner">
     <nav>
       <a href="/Web_Clone/index.html" class="nav_logo"></a>
@@ -51,8 +49,8 @@
     </nav>
 
     <main>
-      <!-- <video autoplay loop muted playsinline poster="/Web_Clone/images/poster.png"
-        src="/Web_Clone/images/video.mp4"></video> -->
+      <video autoplay loop muted playsinline poster="/Web_Clone/images/poster.png"
+        src="/Web_Clone/images/video.mp4"></video>
       <!-- <a href="#" class="btn_scroll_down"></a> -->
 
       <!-- <div class="section_inner sec01">
@@ -91,7 +89,7 @@
         </a>
       </div> -->
 
-      <div class="swiper mySwiper">
+      <!-- <div class="swiper mySwiper">
         <video autoplay loop muted playsinline poster="/Web_Clone/images/poster.png"
           src="/Web_Clone/images/video.mp4"></video>
 
@@ -108,9 +106,9 @@
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
-      </div>
+      </div> -->
 
-      <!-- <div class="swiper mySwiper">
+      <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="section_inner sec01">
@@ -126,7 +124,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="section_inner sec02 ">
+            <div class="section_inner sec02 blind">
               <div class="main_txt sec02_main ">
                 Show You<br>What We Made
               </div>
@@ -139,7 +137,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="section_inner sec03 ">
+            <div class="section_inner sec03 blind">
               <div class="main_txt sec03_main ">
                 Working with<br>Creative Players
               </div>
@@ -150,18 +148,18 @@
                 CAREER
               </a>
             </div>
-          </div> -->
-      <!-- <div class="swiper-slide">Slide 4</div> -->
-      <!-- <div class="swiper-slide">Slide 5</div> -->
-      <!-- <div class="swiper-slide">Slide 6</div> -->
-      <!-- <div class="swiper-slide">Slide 7</div> -->
-      <!-- <div class="swiper-slide">Slide 8</div> -->
-      <!-- <div class="swiper-slide">Slide 9</div> -->
-      <!-- </div>
+          </div>
+          <!-- <div class="swiper-slide">Slide 4</div> -->
+          <!-- <div class="swiper-slide">Slide 5</div> -->
+          <!-- <div class="swiper-slide">Slide 6</div> -->
+          <!-- <div class="swiper-slide">Slide 7</div> -->
+          <!-- <div class="swiper-slide">Slide 8</div> -->
+          <!-- <div class="swiper-slide">Slide 9</div> -->
+        </div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div> -->
-      <!-- <div class="swiper-button-prev"></div> -->
-      <!-- </div> -->
+        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div> -->
+      </div>
 
 
 
@@ -202,14 +200,9 @@
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        // renderBullet: function (index, className) {
-        //   return '<span class="' + className + '">' + (menu[index]) + '</span>';
-        // },
       },
 
       // on: {
-
-
       // slideChangeTransitionStart: function () {
       // 슬라이드 전환 트랜지션이 시작되기 전에 발생합니다. (빼야될 것)
       // sec01.classList.remove("blind");
@@ -244,9 +237,6 @@
       //   swiper_slide.classList.add("blind");
       // }
       // },
-
-
-
 
     });
   </script>
