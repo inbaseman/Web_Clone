@@ -110,7 +110,7 @@
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide sw_slide01 ">
             <div class="section_inner sec01">
               <div class="main_txt sec01_main">
                 LIFE WITH CONTENT.
@@ -123,8 +123,8 @@
               </a>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="section_inner sec02 blind">
+          <div class="swiper-slide sw_slide02">
+            <div class="section_inner sec02 ">
               <div class="main_txt sec02_main ">
                 Show You<br>What We Made
               </div>
@@ -136,8 +136,8 @@
               </a>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="section_inner sec03 blind">
+          <div class="swiper-slide sw_slide03">
+            <div class="section_inner sec03 ">
               <div class="main_txt sec03_main ">
                 Working with<br>Creative Players
               </div>
@@ -190,6 +190,7 @@
       direction: "vertical",
       loop: true,
       grabCursor: true,
+      mousewheel: true,
       effect: "fade",
 
       navigation: {
@@ -202,41 +203,68 @@
         clickable: true,
       },
 
-      // on: {
-      // slideChangeTransitionStart: function () {
-      // 슬라이드 전환 트랜지션이 시작되기 전에 발생합니다. (빼야될 것)
-      // sec01.classList.remove("blind");
-      // sec02.classList.remove("blind");
-      // sec03.classList.remove("blind");
-      // let slide_active = swiper_slide.classList.contains("blind");
-      // console.log(slide_active);
+      on: {
+        slideChangeTransitionStart: function () {
+          // 슬라이드 전환 트랜지션이 시작되기 전에 발생합니다. (빼야될 것)
 
-      // if (slide_active === true) {
-      //   swiper_slide.classList.remove("blind");
-      // } else {
-      //   swiper_slide.classList.add("blind");
-      // }
+          const active_slide = document.querySelector('.swiper-slide-active').childNodes[1];
+          const active_slide_main = document.querySelector('.swiper-slide-active').childNodes[1].childNodes[1];
+          const active_slide_sub = document.querySelector('.swiper-slide-active').childNodes[1].childNodes[3];
+          const active_slide_link = document.querySelector('.swiper-slide-active').childNodes[1].childNodes[5];
+
+          // console.log(document.querySelector('.swiper-slide-active').childNodes[1].childNodes[1]);
+          active_slide.classList.remove("blind");
+
+          active_slide_main.classList.add("animate__animated");
+          active_slide_main.classList.add("animate__fadeInUp");
+          active_slide_main.classList.remove("animate__fadeOut");
+
+          active_slide_sub.classList.add("animate__animated");
+          active_slide_sub.classList.add("animate__fadeInUp");
+          active_slide_sub.classList.remove("animate__fadeOut");
 
 
-      // },
+          active_slide_link.classList.add("animate__animated");
+          active_slide_link.classList.add("animate__fadeInUp");
+          active_slide_link.classList.remove("animate__fadeOut");
 
-      // slideChangeTransitionEnd: function () {
-      // 슬라이드 전환 트랜지션이 완료된 후에 발생합니다. (넣어야 될것)
-      // sec01.classList.add("blind");
-      // sec02.classList.add("blind");
-      // sec03.classList.add("blind");
-      // if (!slide_active) {
-      //   swiper_slide.classList.add("blind");
-      // }
 
-      // let slide_active = swiper_slide.classList.contains("blind");
 
-      // if (slide_active === true) {
-      //   swiper_slide.classList.remove("blind");
-      // } else {
-      //   swiper_slide.classList.add("blind");
-      // }
-      // },
+
+        },
+
+        slideChangeTransitionEnd: function () {
+          // 슬라이드 전환 트랜지션이 완료된 후에 발생합니다. (넣어야 될것)
+
+          const prev_slide = document.querySelector('.swiper-slide-prev').childNodes[1];
+          const prev_slide_main = document.querySelector('.swiper-slide-prev').childNodes[1].childNodes[1];
+          const prev_slide_sub = document.querySelector('.swiper-slide-prev').childNodes[1].childNodes[3];
+          const prev_slide_link = document.querySelector('.swiper-slide-prev').childNodes[1].childNodes[5];
+
+          prev_slide_main.classList.add("animate__animated");
+          prev_slide_main.classList.add("animate__fadeOut");
+          prev_slide_main.classList.remove("animate__fadeInUp");
+
+          prev_slide_sub.classList.add("animate__animated");
+          prev_slide_sub.classList.add("animate__fadeOut");
+          prev_slide_sub.classList.remove("animate__fadeInUp");
+
+          prev_slide_link.classList.add("animate__animated");
+          prev_slide_link.classList.add("animate__fadeOut");
+          prev_slide_link.classList.remove("animate__fadeInUp");
+
+
+          // setTimeout(() => {
+          //   prev_slide.classList.add("blind");
+          // }, 3000);
+
+
+
+
+
+
+        },
+      }
 
     });
   </script>

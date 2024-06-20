@@ -1,17 +1,19 @@
 // const btn_scroll_down = document.querySelector('.btn_scroll_down');
-const swiper_button_next = document.querySelector('.swiper-button-next');
-const sec01 = document.querySelector('.sec01');
-const sec02 = document.querySelector('.sec02');
-const sec03 = document.querySelector('.sec03');
-const sec01_main = document.querySelector('.sec01_main');
-const sec01_sub = document.querySelector('.sec01_sub');
-const sec01_link = document.querySelector('.sec01_link');
-const sec02_main = document.querySelector('.sec02_main');
-const sec02_sub = document.querySelector('.sec02_sub');
-const sec02_link = document.querySelector('.sec02_link');
-const sec03_main = document.querySelector('.sec03_main');
-const sec03_sub = document.querySelector('.sec03_sub');
-const sec03_link = document.querySelector('.sec03_link');
+// const swiper_button_next = document.querySelector('.swiper-button-next');
+// const sec01 = document.querySelector('.sec01');
+// const sec02 = document.querySelector('.sec02');
+// const sec03 = document.querySelector('.sec03');
+// const main_txt = document.querySelector('.main_txt');
+
+// const sec01_main = document.querySelector('.sec01_main');
+// const sec01_sub = document.querySelector('.sec01_sub');
+// const sec01_link = document.querySelector('.sec01_link');
+// const sec02_main = document.querySelector('.sec02_main');
+// const sec02_sub = document.querySelector('.sec02_sub');
+// const sec02_link = document.querySelector('.sec02_link');
+// const sec03_main = document.querySelector('.sec03_main');
+// const sec03_sub = document.querySelector('.sec03_sub');
+// const sec03_link = document.querySelector('.sec03_link');
 
 
 // const no1 = document.querySelector('.no1');
@@ -23,105 +25,110 @@ const sec03_link = document.querySelector('.sec03_link');
 // const no7 = document.querySelector('.no7');
 // const no8 = document.querySelector('.no8');
 // const no9 = document.querySelector('.no9');
-// const swiper_slide = document.querySelector('.sec');
+
+// const swiper_slide01 = document.querySelector('.sw_slide01');
+// const swiper_slide02 = document.querySelector('.sw_slide02');
+// const swiper_slide03 = document.querySelector('.sw_slide03');
+
+// const slide_active01 = swiper_slide01.classList.contains("swiper-slide-active");
+// const slide_active02 = swiper_slide02.classList.contains("swiper-slide-active");
+// const slide_active03 = swiper_slide03.classList.contains("swiper-slide-active");
 
 
 
+// sec01_main.classList.add("animate__animated");
+// sec01_main.classList.add("animate__fadeInUp");
 
-sec01_main.classList.add("animate__animated");
-sec01_main.classList.add("animate__fadeInUp");
+// sec01_sub.classList.add("animate__animated");
+// sec01_sub.classList.add("animate__fadeInUp");
 
-sec01_sub.classList.add("animate__animated");
-sec01_sub.classList.add("animate__fadeInUp");
-
-sec01_link.classList.add("animate__animated");
-sec01_link.classList.add("animate__fadeInUp");
-
-
-swiper_button_next.addEventListener('click', function () {
-  if (!sec01.classList.contains("blind")) {
-
-    sec01.classList.add("animate__animated");
-    sec01.classList.add("animate__fadeOut");
-
-    setTimeout(() => {
-      sec01.classList.add("blind");
-      sec01_main.classList.add("blind");
-      sec01_sub.classList.add("blind");
-      sec01_link.classList.add("blind");
-    }, 1000);
+// sec01_link.classList.add("animate__animated");
+// sec01_link.classList.add("animate__fadeInUp");
 
 
-    setTimeout(() => {
-      sec02.classList.remove("blind");
-    }, 800);
-    setTimeout(() => {
-      sec02_main.classList.remove("blind");
-      sec02_main.classList.add("animate__animated");
-      sec02_main.classList.add("animate__fadeInUp");
-      sec02_sub.classList.remove("blind");
-      sec02_sub.classList.add("animate__animated");
-      sec02_sub.classList.add("animate__fadeInUp");
-      sec02_link.classList.remove("blind");
-      sec02_link.classList.add("animate__animated");
-      sec02_link.classList.add("animate__fadeInUp");
-    }, 800);
+// swiper_button_next.addEventListener('click', function () {
+//   if (!sec01.classList.contains("blind")) {
 
-  } else if (!sec02.classList.contains("blind")) {
-
-    sec02.classList.add("animate__animated");
-    sec02.classList.add("animate__fadeOut");
-    setTimeout(() => {
-      sec02.classList.add("blind");
-      sec02_main.classList.add("blind");
-      sec02_sub.classList.add("blind");
-      sec02_link.classList.add("blind");
-    }, 1000);
+//     sec01.classList.add("animate__animated");
+//     sec01.classList.add("animate__fadeOut");
+//     setTimeout(() => {
+//       sec01.classList.add("blind");
+//       sec01_main.classList.add("blind");
+//       sec01_sub.classList.add("blind");
+//       sec01_link.classList.add("blind");
+//     }, 1000);
 
 
-    setTimeout(() => {
-      sec03.classList.remove("blind");
-    }, 800);
-    setTimeout(() => {
-      sec03_main.classList.remove("blind");
-      sec03_main.classList.add("animate__animated");
-      sec03_main.classList.add("animate__fadeInUp");
-      sec03_sub.classList.remove("blind");
-      sec03_sub.classList.add("animate__animated");
-      sec03_sub.classList.add("animate__fadeInUp");
-      sec03_link.classList.remove("blind");
-      sec03_link.classList.add("animate__animated");
-      sec03_link.classList.add("animate__fadeInUp");
-    }, 800);
+//     setTimeout(() => {
+//       sec02.classList.remove("blind");
+//     }, 800);
+//     setTimeout(() => {
+//       sec02_main.classList.remove("blind");
+//       sec02_main.classList.add("animate__animated");
+//       sec02_main.classList.add("animate__fadeInUp");
+//       sec02_sub.classList.remove("blind");
+//       sec02_sub.classList.add("animate__animated");
+//       sec02_sub.classList.add("animate__fadeInUp");
+//       sec02_link.classList.remove("blind");
+//       sec02_link.classList.add("animate__animated");
+//       sec02_link.classList.add("animate__fadeInUp");
+//     }, 800);
 
-  } else if (!sec03.classList.contains("blind")) {
+//   } else if (!sec02.classList.contains("blind")) {
 
-    sec03.classList.add("animate__animated");
-    sec03.classList.add("animate__fadeOut");
-    setTimeout(() => {
-      sec03.classList.add("blind");
-      sec03_main.classList.add("blind");
-      sec03_sub.classList.add("blind");
-      sec03_link.classList.add("blind");
-    }, 1000);
+//     sec02.classList.add("animate__animated");
+//     sec02.classList.add("animate__fadeOut");
+//     setTimeout(() => {
+//       sec02.classList.add("blind");
+//       sec02_main.classList.add("blind");
+//       sec02_sub.classList.add("blind");
+//       sec02_link.classList.add("blind");
+//     }, 1000);
 
 
-    setTimeout(() => {
-      sec01.classList.remove("blind");
-    }, 800);
-    setTimeout(() => {
-      sec01_main.classList.remove("blind");
-      sec01_main.classList.add("animate__animated");
-      sec01_main.classList.add("animate__fadeInUp");
-      sec01_sub.classList.remove("blind");
-      sec01_sub.classList.add("animate__animated");
-      sec01_sub.classList.add("animate__fadeInUp");
-      sec01_link.classList.remove("blind");
-      sec01_link.classList.add("animate__animated");
-      sec01_link.classList.add("animate__fadeInUp");
-    }, 800);
-  }
-});
+//     setTimeout(() => {
+//       sec03.classList.remove("blind");
+//     }, 800);
+//     setTimeout(() => {
+//       sec03_main.classList.remove("blind");
+//       sec03_main.classList.add("animate__animated");
+//       sec03_main.classList.add("animate__fadeInUp");
+//       sec03_sub.classList.remove("blind");
+//       sec03_sub.classList.add("animate__animated");
+//       sec03_sub.classList.add("animate__fadeInUp");
+//       sec03_link.classList.remove("blind");
+//       sec03_link.classList.add("animate__animated");
+//       sec03_link.classList.add("animate__fadeInUp");
+//     }, 800);
+
+//   } else if (!sec03.classList.contains("blind")) {
+
+//     sec03.classList.add("animate__animated");
+//     sec03.classList.add("animate__fadeOut");
+//     setTimeout(() => {
+//       sec03.classList.add("blind");
+//       sec03_main.classList.add("blind");
+//       sec03_sub.classList.add("blind");
+//       sec03_link.classList.add("blind");
+//     }, 1000);
+
+
+//     setTimeout(() => {
+//       sec01.classList.remove("blind");
+//     }, 800);
+//     setTimeout(() => {
+//       sec01_main.classList.remove("blind");
+//       sec01_main.classList.add("animate__animated");
+//       sec01_main.classList.add("animate__fadeInUp");
+//       sec01_sub.classList.remove("blind");
+//       sec01_sub.classList.add("animate__animated");
+//       sec01_sub.classList.add("animate__fadeInUp");
+//       sec01_link.classList.remove("blind");
+//       sec01_link.classList.add("animate__animated");
+//       sec01_link.classList.add("animate__fadeInUp");
+//     }, 800);
+//   }
+// });
 
 
 
