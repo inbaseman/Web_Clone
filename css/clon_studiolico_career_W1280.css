@@ -1,0 +1,194 @@
+/* 햄버거메뉴 */
+.icoMenu {
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  z-index: 200;
+  font-size: 40px;
+  /* color: white; */
+}
+/* 햄버거메뉴 */
+
+
+/* 메뉴창 팝업 */
+.nav_manu_list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  gap: 20px;
+  transform: translateY(100%);
+}
+
+nav.active .nav_manu_list {
+  transform: translateY(0);
+
+}
+
+nav {
+  justify-content: flex-end;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+nav::after{
+  content: "";
+width: 100%;
+height: 1px;
+position: fixed;
+top: 100px;
+left: 0px;
+background-color: rgba(0,0,0,0.2);
+}
+
+nav a {
+  font-family: 'museo_slab_700';
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.manu01:visited, .manu01:link,
+.manu02:visited, .manu02:link,
+/* .manu03:visited, .manu03:link, */
+.manu04:visited, .manu04:link {
+  color: rgba(255, 255, 255, 0.40);
+  /* text-decoration: none; */
+}
+.manu01:hover,
+.manu02:hover,
+/* .manu03:hover, */
+.manu04:hover {
+  color: rgba(255, 255, 255, 1);
+  /* font-weight: bold; */
+}
+.manu03 {
+  color: rgba(255, 255, 255, 1);
+  /* font-weight: bold; */
+  /* text-decoration: none; */
+}
+.manu03 .rectangle {
+  background: rgba(255, 255, 255, 1.00);
+}
+
+
+
+
+footer {
+  opacity: 0;
+}
+footer.active {
+  justify-content: center;
+  opacity: 1;
+}
+
+footer.active .icons {
+position: fixed;
+bottom: 35px;
+left: 42%;
+}
+
+footer.active .privacy_policy,
+footer.active .ethicsline,
+footer.active .C_right {
+  display: none;
+}
+
+footer.active .logo_webtoon {
+
+  display: block;
+  width: 67px;
+  height: 30px;
+
+
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -151.444px 4.223px / 1098.837% 1292.308% no-repeat;
+}
+
+footer.active .logo_naver {
+
+  display: block;
+  width: 67px;
+  height: 31px;
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -236.554px 9.133px / 1098.837% 1292.308% no-repeat;
+}
+/* 햄버거메뉴 */
+
+
+
+.nav_logo {
+  width: 63px;
+  height: 32px;
+  /* background: url(/Web_Clone/images/studiolico/sp_logo.png) -353.5px -315px / 750% 800% no-repeat; */
+  background: url(/Web_Clone/images/studiolico/sp_logo.png) -222.705px -166.365px / 750% 800% no-repeat;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+.sub_career_diagram {
+  /* position: absolute; */
+  top: 130px;
+  right: 0px;
+  /* z-index: 30; */
+  /* width: 645px; */
+  /* height: 645px; */
+}
+
+
+.diagram_center {
+  /* position: absolute; */
+  top: 40%;
+  left: 38%;
+  /* z-index: 50; */
+  width: 96px;
+  height: 92px;
+  /* background: url(/Web_Clone/images/studiolico/img_payer_pc.png) no-repeat; */
+  background-size: 96px 92px;
+  /* -ms-transform: translate(-50%, -50%); */
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
+  /* opacity: 0; */
+  /* transition: 1s; */
+}
+
+
+
+.diagram_circle {
+  /* position: absolute; */
+  /* z-index: 30; */
+  width: 353px;
+  height: 353px;
+  /* border: 1px solid #000; */
+  /* -webkit-border-radius: 50%; */
+  /* -moz-border-radius: 50%; */
+  /* border-radius: 50%; */
+  /* opacity: 0; */
+}
+
+.diagram_center .center_txt,
+.diagram_center .center_txt .en,
+.diagram_circle_wrap .diagram_circle .circle_txt{
+  font-size: 11px;
+}
+
+
+.main_txt {
+  /* width: 100%; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  /* margin: 80px 180px ; */
+  /* gap: 40px; */
+  position: initial;
+}
+

@@ -11,15 +11,20 @@ menuButton.addEventListener('click', function () {
   FOOTER.classList.toggle("active");
   // nav에 active 토글
   this.textContent = this.textContent === 'close' ? 'menu' : 'close';
+  if(this.textContent === 'close'){
+    this.style.color="white"
+  } else{
+    this.style.color="black"
+  }
   // 삼항연산자 사용하여 텍스트 변경, 아이콘의 모습이 바뀐다 
 });
+
+
 
 let diagram_center = document.querySelector('.diagram_center');
 let center_txt = document.querySelectorAll('.center_txt');
 let diagram_circle = document.querySelectorAll('.diagram_circle');
 let circle_txt = document.querySelectorAll('.circle_txt');
-console.log(diagram_center);
-console.log(center_txt);
 
 
 
